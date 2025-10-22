@@ -38,6 +38,7 @@ while True:
 			cv2.putText(img,className[classId-1].upper(),(box[0]+10,box[1]+30),cv2.FONT_HERSHEY_COMPLEX,1,(0,255,0),2)
 			cv2.putText(img,str(round(confidence*100,2)),(box[0]+200,box[1]+30),cv2.FONT_HERSHEY_COMPLEX,1,(0,255,0),2)
 	cv2.imshow("output",img)
+#when q is press then exit from the camera 
 	if cv2.waitKey(1) & 0xFF == ord('q'):
 		break
 
