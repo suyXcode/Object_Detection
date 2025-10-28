@@ -2,6 +2,7 @@ import cv2
 thres=0.5
 cap=cv2.VideoCapture(0)
 
+
 cap.set(3,648)
 cap.set(4,448)
 cap.set(10,70)
@@ -41,6 +42,7 @@ while True:
 #when q is press then exit from the camera 
 	if cv2.waitKey(1) & 0xFF == ord('q'):
 		break
+
 
 
 
